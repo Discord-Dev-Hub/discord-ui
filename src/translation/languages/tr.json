@@ -1,0 +1,8 @@
+{
+  "test": "aaaaa",
+  "common": {
+    "error": {
+      "minLength": "{{name}} en az {{size}} karakter olmalıdır."
+    }
+  }
+}
