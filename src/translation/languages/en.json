@@ -1,0 +1,62 @@
+{
+  "login": {
+    "title": "Welcome back!",
+    "description": "We're so excited to see you again!",
+    "register": "Need an account?",
+    "registerLink": "Register"
+  },
+  "register": {
+    "title": "Create an account",
+    "description": "By registering, you agree to Discord's <link1>Terms of Service</link1> and <link2>Privacy Policy</link2>",
+    "alreadyAcount": "Already have an account?"
+  },
+  "guild": {
+    "create": {
+      "name": "Guild name",
+      "defaultName": "{{name}}'s server",
+      "title": "Create a server",
+      "descriptio": "Add personality to your new server by adding a name and icon. You can change these whenever you want."
+    },
+    "settings": {
+      "guildSettings": "Guild Settings",
+      "createChannel": "Create Channel"
+    }
+  },
+  "channel": {
+    "create": {
+      "textDescription": "Send messages, images, GIFs, emoji, opinions, and puns",
+      "voiceDescription": "Hang out together with voice, video, and screen share",
+      "placeholder": "new-channel"
+    },
+    "empty": {
+      "title": "No Text Channels",
+      "description": "You find yourself in a strange place. You don't have access to any text channels, or there are none in this server."
+    }
+  },
+  "common": {
+    "error": {
+      "minLength": "{{name}} must be at least {{size}} characters.",
+      "maxLength": "{{name}} must be no more than {{size}}  characters."
+    },
+    "channel": {
+      "type": "Channel type",
+      "name": "Channel name",
+      "create": "Create channel"
+    },
+    "contiune": "Contiune",
+    "email": "Email",
+    "createGuild": "Create a guild",
+    "password": "Password",
+    "username": "Username",
+    "displayName": "Display Name",
+    "dateOfBirth": "Date Of Birth",
+    "forgotPassword": "Forgot your password?",
+    "logIn": "Log In",
+    "create": "Create",
+    "back": "back",
+    "imageEdit": "Image Edit",
+    "register": "Register",
+    "terms": "Terms of Service",
+    "policy": "Privacy Policy"
+  }
+}

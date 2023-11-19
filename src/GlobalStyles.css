@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --secondary-background: 225 6.3% 60%;
+    --foreground: 222.2 47.4% 11.2%;
+    --background-dark: 220 8.1% 7.3%;
+    --tooltip: 220 8.1% 7.3%;
+
+    --danger: 358 92.9% 72.4%;
+
+    --success: 145 65% 39.2%;
+
+    --button-primary: 230, 74%, 58%;
+    --button-secondary: 230, 74%, 58%;
+
+    --text-color-gray: 215 8.8% 73.3%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 220 6.5% 18%;
+    --secondary-background: 225 6.3% 12.5%;
+    --foreground: 213 31% 91%;
+    --background-dark: 220 8.1% 7.3%;
+    --background-overlay-selected: 227, 7%, 27%;
+
+    --danger: 358 92.9% 72.4%;
+    --tooltip: 220 8.1% 7.3%;
+    --success: 145 65% 39.2%;
+
+    --text-color-gray: 215 8.8% 73.3%;
+
+    --button-primary: 230, 74%, 58%;
+    --button-primary-hover: 235 85.6% 62%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 220 6.5% 18%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: 220 6.5% 18%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
+  }
+
+  a {
+    color: hsl(200 100% 49.4%);
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  body,
+  html,
+  #root {
+    @apply w-full h-full font-nunito font-thin text-base;
+  }
+}

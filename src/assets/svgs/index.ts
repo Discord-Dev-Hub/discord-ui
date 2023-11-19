@@ -1,0 +1,9 @@
+export { default as SvgLoginBackground } from './loginBackground.svg';
+export { default as SvgIconDiscordText } from './discordText.svg';
+export { default as SvgIconDiscord } from './discordLogo.svg';
+export { default as SvgIconPlus } from './plus.svg';
+export { default as SvgIconGuildImageUpload } from './guildImageUpload.svg';
+export { default as SvgIconEmptyChannel } from './emptyChannel.svg';
+export { default as SvgIconClose } from './close.svg';
+export { default as SvgIconDropDown } from './dropdownicon.svg';
+export { default as SvgIconFrame } from './frame.svg';
