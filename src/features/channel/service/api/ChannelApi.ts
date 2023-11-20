@@ -15,4 +15,10 @@ export class ChannelApi {
       .get<Required<Channel[]>>(`/guilds/${guildId}/channels`)
       .then(({ data }) => data);
   }
+
+  getChannelById(guildId: string, channelId: string) {
+    return discordApiClient
+      .get<Required<Channel>>(`/guilds/${guildId}/channels/${channelId}`)
+      .then(({ data }) => data);
+  }
 }
