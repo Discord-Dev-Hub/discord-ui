@@ -1,7 +1,9 @@
 import { RootState } from '@discord-ui/store/store';
 
 import { createSelector } from '@reduxjs/toolkit';
+import { chain } from 'lodash';
 
+import { Channel } from '../service/dto/Channel';
 import { channelSelectors } from './channel.slice';
 
 const channelState = (state: RootState) => state.channel;
@@ -18,5 +20,13 @@ export const selectChannelsLoading = createSelector(
 
 export const selectChannelById = createSelector(
   [channelState, (_, channelId: string) => channelId],
-  (state, channelId) => channelSelectors.selectById(state.channels, channelId),
+  (state, channelId) => {
+    const channel = chain(channelSelectors.selectAll(state.channels))
+      .map('channels')
+      .flatten()
+      .find({ _id: channelId })
+      .value();
+
+    return channel;
+  },
 );
