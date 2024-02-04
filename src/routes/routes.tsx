@@ -1,4 +1,4 @@
-import { Home, Login, Register } from '@discord-ui/features';
+import { Home, Invite, Login, Register } from '@discord-ui/features';
 import { Guild } from '@discord-ui/features/guild/components/Guild';
 
 import { RouteObject } from 'react-router-dom';
@@ -15,6 +15,7 @@ export const routes = [
     path: `${DiscordRoutesEnum.register}`,
     element: <AppRoute skipIfLoggedIn component={<Register />} />,
   },
+  { path: `${DiscordRoutesEnum.invite}/:guildId/`, element: <AppRoute component={<Invite />} /> },
   { path: `${DiscordRoutesEnum.channels}/:guildId/*`, element: <AppRoute component={<Guild />} /> },
   { path: '/*', element: <AppRoute component={<Home />} /> },
 ] as RouteObject[];

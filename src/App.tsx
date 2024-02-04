@@ -4,6 +4,8 @@ import { useRoutes } from 'react-router-dom';
 
 import { MainLayout } from './common/layouts/mainLayout/MainLayout';
 import { ThemeProvider } from './common/providers';
+import { ChatProvider } from './common/providers/ChatProvider';
+import { environment } from './environments/environment';
 import { routes } from './routes/routes';
 import { onAppLoad } from './store/onAppLoad';
 import { store } from './store/store';
@@ -32,7 +34,9 @@ export const App: React.FC = () => {
   return (
     <Provider store={store}>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <MainLayout>{appRoutes}</MainLayout>
+        <ChatProvider baseURL={environment.baseURL}>
+          <MainLayout>{appRoutes}</MainLayout>
+        </ChatProvider>
       </ThemeProvider>
     </Provider>
   );

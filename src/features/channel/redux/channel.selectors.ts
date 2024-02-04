@@ -3,7 +3,6 @@ import { RootState } from '@discord-ui/store/store';
 import { createSelector } from '@reduxjs/toolkit';
 import { chain } from 'lodash';
 
-import { Channel } from '../service/dto/Channel';
 import { channelSelectors } from './channel.slice';
 
 const channelState = (state: RootState) => state.channel;

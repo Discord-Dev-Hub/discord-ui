@@ -3,23 +3,37 @@ import { combineReducers } from 'redux';
 
 import channel, { channelActions } from '../features/channel/redux/channel.slice';
 import guild, { guildActions } from '../features/guild/redux/guild.slice';
+import { inviteActions } from '../features/invite/redux/invite.slice';
 import { loginActions } from '../features/login/redux/login.slice';
 import { registerActions } from '../features/register/redux/register.slice';
 import test, { testActions } from '../features/test/redux/test.slice';
 import user, { userActions } from '../features/user/redux/user.slice';
+import chat, { chatActions } from './chat/chat.slice';
 
-export { testActions, userActions, registerActions, loginActions, guildActions, channelActions };
+export {
+  chatActions,
+  testActions,
+  userActions,
+  registerActions,
+  loginActions,
+  guildActions,
+  channelActions,
+  inviteActions,
+};
 
 export * as testSelectors from '../features/test/redux/test.selectors';
 export * as userSelectors from '../features/user/redux/user.selectors';
 export * as guildSelectors from '../features/guild/redux/guild.selectors';
 export * as channelSelectors from '../features/channel/redux/channel.selectors';
 
+export * as chatSelectors from './chat/chat.selectors';
+
 const reducer = combineReducers({
   test,
   user,
   channel,
   guild,
+  chat,
 });
 
 export type RootState = ReturnType<typeof reducer>;

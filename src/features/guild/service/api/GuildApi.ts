@@ -2,6 +2,7 @@ import { discordApiClient } from '@discord-ui/discord-api-client';
 
 import { CreateGuildDto } from '../dto/CreateGuildDto';
 import { Guild } from '../dto/Guild';
+import { GuildMember } from '../dto/GuildMember';
 
 export class GuildApi {
   createGuild(dto: CreateGuildDto) {
@@ -20,6 +21,12 @@ export class GuildApi {
   getGuilds(userId: string) {
     return discordApiClient
       .get<Required<Guild[]>>(`/user/${userId}/guilds`)
+      .then(({ data }) => data);
+  }
+
+  getGuildMembers(guildId: string) {
+    return discordApiClient
+      .get<Required<GuildMember[]>>(`/guilds/${guildId}/members`)
       .then(({ data }) => data);
   }
 

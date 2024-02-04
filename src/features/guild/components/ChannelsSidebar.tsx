@@ -50,11 +50,11 @@ export const ChannelsSidebar: React.FC = () => {
         <div className="flex flex-col gap-1 pt-3 overflow-auto">
           {channels.map((channel, i) => (
             <Link
+              key={`channel-${channel._id}-${i}`}
               className="w-full px-3 hover:no-underline"
               to={`${DiscordRoutesEnum.channels}/${guildId}/${channel._id}`}
             >
               <LineSection
-                key={`channel-${channel._id}-${i}`}
                 title={channel.name}
                 active={pathname.includes(channel._id)}
                 className="gap-2"

@@ -12,6 +12,8 @@
 
     --danger: 358 92.9% 72.4%;
 
+    --bg-overlay-chat: 223 7% 21%;
+
     --success: 145 65% 39.2%;
 
     --button-primary: 230, 74%, 58%;
@@ -54,6 +56,8 @@
     --foreground: 213 31% 91%;
     --background-dark: 220 8.1% 7.3%;
     --background-overlay-selected: 227, 7%, 27%;
+
+    --bg-overlay-chat: 223 7% 21%;
 
     --danger: 358 92.9% 72.4%;
     --tooltip: 220 8.1% 7.3%;

@@ -123,7 +123,7 @@ export const CreateGuild: React.FC = () => {
               <Button disabled={loading} variant={'ghost'} onClick={() => setIsOpen(false)}>
                 {t('common.back')}
               </Button>
-              <Button disabled={loading} onClick={form.handleSubmit(onSubmit)}>
+              <Button loading={loading} onClick={form.handleSubmit(onSubmit)}>
                 {t('common.create')}
               </Button>
             </DialogFooter>

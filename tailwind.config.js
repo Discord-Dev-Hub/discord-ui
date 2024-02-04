@@ -20,6 +20,7 @@ module.exports = {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         success: 'hsl(var(--success))',
+        overlayChat: 'hsl(var(--bg-overlay-chat))',
         backgroundOverlaySelected: 'hsl(var(--background-overlay-selected))',
         backgroundDark: 'hsl(var(--background-dark))',
         tooltip: 'hsl(var(--tooltip))',
